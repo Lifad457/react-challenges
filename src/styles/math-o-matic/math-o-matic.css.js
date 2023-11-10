@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
         grid-area: top;
         display: flex;
         justify-content: center;
-        align-items: flex-end
+        align-items: flex-end;
     }
 
     form {
@@ -60,7 +60,7 @@ export const Wrapper = styled.div`
         gap: 20px;
         grid-area: playAreaTop;
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     input {
@@ -113,7 +113,7 @@ export const Wrapper = styled.div`
 export const ProblemContainer = styled.div`
     width: 100%;
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
 `
 export const ButtonContainer = styled.div`
     width: 100%;
@@ -139,12 +139,12 @@ export const ButtonContainer = styled.div`
 
     button:disabled {
         opacity: .5;
-        cursor: not-allowed
+        cursor: not-allowed;
     }
 
     button:hover {
         cursor: pointer;
-        filter: brightness(.8)
+        filter: brightness(.8);
     }
 
     button:focus:not(:focus-visible) {
@@ -168,7 +168,7 @@ export const ButtonContainer = styled.div`
     }
 
     .check-answer-button span {
-        background-color: #F7B2B7
+        background-color: #F7B2B7;
     }
 
     .new-problem-button span {
@@ -177,7 +177,7 @@ export const ButtonContainer = styled.div`
 
     .start-button span {
         background-color: #82FAA3;
-        filter: brightness(.8)
+        filter: brightness(.8);
     }
 
     button span {
@@ -207,31 +207,31 @@ export const MessageContainer = styled.div`
     align-items: flex-start;
 
     .too-high {
-        color: #BBBE64
+        color: #BBBE64;
     }
 
     .correct {
-        color: #A2FAA3
+        color: #A2FAA3;
     }
 
     .too-low, .invalid-input {
-        color: #DD1155
+        color: #DD1155;
     }
 
     .fade-out {
-        animation: fade-out 2s linear both
+        animation: fade-out 2s linear both;
     }
 
     .hidden {
-        visibility: hidden
+        visibility: hidden;
     }
 
     @keyframes fade-out {
         0% {
-            opacity: 1
+            opacity: 1;
         }
         100% {
-            opacity: 0
+            opacity: 0;
         }
     }
 `

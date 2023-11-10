@@ -178,7 +178,7 @@ export default function MathOMatic() {
             .join(', ')
         return `{${string}}`
     } 
-console.log(messageClass)
+
     return (
         <>
             <GlobalStyle />
@@ -201,9 +201,11 @@ console.log(messageClass)
                             required
                         />
                     </label>
-                        
-                    <MessageContainer className={`${messageClass}`}>
-                        {recentStatusChange && answerStatus}
+
+                    <MessageContainer>
+                        <p className={`${messageClass}`}>
+                            {recentStatusChange && answerStatus}
+                        </p>
                     </MessageContainer>
                     
                     <ButtonContainer>
