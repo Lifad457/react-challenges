@@ -18,6 +18,7 @@ function Index() {
                 <Link to='study-buddy'>Study Buddy</Link>
                 <Link to='character-creator'>RPG Character Creator</Link>
                 <Link to='math-o-matic'>Math-O-Matic</Link>
+                <Link to='original-calculator'>Original Calculator</Link>
               </Links>
           </Container>
     </>

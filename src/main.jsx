@@ -6,6 +6,7 @@ import Index from './pages/Index.jsx'
 import StudyBuddy from './pages/StudyBuddy.jsx'
 import RpgCharacterCreator from './pages/RpgCharacterCreator.jsx'
 import MathOMatic from './pages/MathOMatic.jsx'
+import OriginalCalculator from './pages/OriginalCalculator.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='study-buddy' element={<StudyBuddy />} />
     <Route path='character-creator' element={<RpgCharacterCreator />} />
     <Route path='math-o-matic' element={<MathOMatic />} />
+    <Route path='original-calculator' element={<OriginalCalculator />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>
