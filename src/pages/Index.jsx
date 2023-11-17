@@ -19,6 +19,7 @@ function Index() {
                 <Link to='character-creator'>RPG Character Creator</Link>
                 <Link to='math-o-matic'>Math-O-Matic</Link>
                 <Link to='original-calculator'>Original Calculator</Link>
+                <Link to='dashboard'>Save the Dashboard</Link>
               </Links>
           </Container>
     </>
