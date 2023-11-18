@@ -9,47 +9,23 @@ import ToDo from "../components/dashboard/ToDo"
 import Weather from "../components/dashboard/Weather"
 import ConfigMenu from "../components/dashboard/ConfigMenu"
 import GlobalStyle from "../styles/dashboard/global.css"
-import { SavedMessageContainer, WidgetContainer } from "../styles/dashboard/dashboard.css"
+import { SavedMessageContainer,SavedMessage, WidgetContainer } from "../styles/dashboard/dashboard.css"
 
 export default function Dashboard() {
     
-/* Challenge
-
-    The save button doesn't actually save the user's widget configuration. Your task is to fix this as follows: 
-
-    	1. When the user clicks the save button and thereby invokes the save function on line 36 
-		   below, the widgetConfig state array should be saved to localStorage. 
-       
-    	2. The widgetConfig state should be initialized as the array saved to localStorage in the 
-	  	   previous step, if any array has been saved. Otherwise, it should set be initialized as DEFAULT_CONFIG.  
-			 
-	Note: The save button has already been set up to invoke the save function. 
-              
-    Bonus challenge: Complete the second task by using lazy state initialization. 
-*/
 	const DEFAULT_CONFIG = blankConfig.map(widget => {
 		return {...widget, positionData: {...widget.positionData}}
 	})
 
-	const [widgetConfig, setWidgetConfig] = React.useState(DEFAULT_CONFIG)
+	const [widgetConfig, setWidgetConfig] = React.useState(
+		() => JSON.parse(localStorage.getItem('config')) || DEFAULT_CONFIG
+	)
 	const [saveRequested, setSaveRequested] = React.useState(false)
 
     function save() {
-		setSaveRequested(true) // This causes the green "Saved!" message to be rendered on line 130 below. The state then gets set back to false by the setTimeout on line 70, which removes the message. 
+		setSaveRequested(true) 
+		localStorage.setItem('config', JSON.stringify(widgetConfig)); 
 	} 
-
-
-
-
-
-
-/****** Write your code above! *******************************************************************  
- 
- All of the code relevant to solving the challenge is above! Nothing about this project needs to be changed or analyzed outside of this code! 
-    
- In addition to adding your own code, you will only have to make a small modification to the way the widgetConfig state is initialized above. Otherwise, no changes in the code above need to be made either! 
-
-***************************************************************************************************/
 
 	const widgetComponents = {
 		Clock: <Clock />,
@@ -62,7 +38,7 @@ export default function Dashboard() {
     
     const savedMessage = (
         <SavedMessageContainer>
-            <savedMessage>Saved!</savedMessage>
+            <SavedMessage>Saved!</SavedMessage>
         </SavedMessageContainer>
     )
 	
