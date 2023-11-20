@@ -20,6 +20,7 @@ function Index() {
                 <Link to='math-o-matic'>Math-O-Matic</Link>
                 <Link to='original-calculator'>Original Calculator</Link>
                 <Link to='dashboard'>Save the Dashboard</Link>
+                <Link to='fire-starter'>Fire Starter</Link>
               </Links>
           </Container>
     </>

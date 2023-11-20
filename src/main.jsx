@@ -8,6 +8,7 @@ import RpgCharacterCreator from './pages/RpgCharacterCreator.jsx'
 import MathOMatic from './pages/MathOMatic.jsx'
 import OriginalCalculator from './pages/OriginalCalculator.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import FireStarter from './pages/FireStarter.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='math-o-matic' element={<MathOMatic />} />
     <Route path='original-calculator' element={<OriginalCalculator />} />
     <Route path='dashboard' element={<Dashboard />} />
+    <Route path='fire-starter' element={<FireStarter />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>
