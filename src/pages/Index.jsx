@@ -21,6 +21,7 @@ function Index() {
                 <Link to='original-calculator'>Original Calculator</Link>
                 <Link to='dashboard'>Save the Dashboard</Link>
                 <Link to='fire-starter'>Fire Starter</Link>
+                <Link to='autocomplete'>Auto Complete</Link>
               </Links>
           </Container>
     </>

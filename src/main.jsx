@@ -9,6 +9,7 @@ import MathOMatic from './pages/MathOMatic.jsx'
 import OriginalCalculator from './pages/OriginalCalculator.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import FireStarter from './pages/FireStarter.jsx'
+import AutoComplete from './pages/AutoComplete.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='original-calculator' element={<OriginalCalculator />} />
     <Route path='dashboard' element={<Dashboard />} />
     <Route path='fire-starter' element={<FireStarter />} />
+    <Route path='autocomplete' element={<AutoComplete />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>
