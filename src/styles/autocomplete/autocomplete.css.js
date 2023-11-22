@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
 
     h1 {
         color: #D88C9A;
-        font-size: 34px
+        font-size: 34px;
     }
 
     h2 {
@@ -50,14 +50,14 @@ export const HeaderIcon = styled.img`
 	filter: invert(83%) sepia(10%) saturate(1174%) hue-rotate(170deg) brightness(93%) contrast(81%);
 `
 export const ToDoListContainer = styled.div`
-	padding: 10px 0 20px 0;
-	overflow: scroll;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	padding: 25px 0;
+	overflow: scroll;
 	background: #98c1d9;
 	height: 350px;
 	width: 300px;
-	position: relative;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 `
@@ -65,6 +65,7 @@ export const ToDoListItemContainer = styled.div`
 	display: flex;
 	align-items: center;
 	margin-left: 25px;
+    padding-bottom: 25px;
 
     input {
         margin-right: 5px;
@@ -106,7 +107,7 @@ export const AddItemIcon = styled.img`
         filter: invert(69%) sepia(20%) saturate(755%) hue-rotate(300deg) brightness(88%) contrast(92%);
     }
     .faded {
-        opacity: 0.2
+        opacity: 0.2;
     }
 `
 export const CheckBoxLabel = styled.label`
@@ -163,7 +164,7 @@ export const ToDoListItemText = styled.p`
     margin-left: 25px;
 
     .crossed-out {
-        text-decoration: line-through
+        text-decoration: line-through;
     }
 `
 export const AllProgressBarsContainer = styled.div`
@@ -183,4 +184,79 @@ export const ProgressBarContent = styled.div`
     height: 100%;
     animation: progress-animation 2s linear both;
 `
-export const BottomBarContainer = styled.footer``
+export const BottomBarContainer = styled.footer`
+    display: flex;
+    height: 50px;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    background: #3d5a80;
+
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-left: 5px;
+    }
+`
+export const Icon = styled.img`
+    height: 40%;
+
+    &:hover {
+        cursor: pointer;
+        filter: invert(78%) sepia(46%) saturate(284%) hue-rotate(172deg) brightness(88%) contrast(91%);
+    }
+`
+export const DoItButtonContainer = styled.div`
+    display: flex;
+    padding: 20px;
+    margin-top: -1px;
+    justify-content: center;
+    background: #98c1d9;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    button {
+        position: relative;
+        padding: 1.3em;
+        border: none;
+        background: #D88C9A;
+        color: #E1E2EF;
+        font-weight: 800;
+        transition: 0.2s;
+        font-size: 14px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        box-shadow: #3d5a80 0px 7px 2px, #000 0px 8px 5px;
+    }
+
+    button:hover {
+        filter: brightness(1.1);
+        cursor: pointer;
+    }
+
+    button:active {
+        top: 4px;
+        box-shadow: #3d5a80 0px 3px 2px,#000 0px 3px 5px;
+    }
+
+    button:focus:not(:focus-visible) {
+        outline: 0;
+    }
+
+    @keyframes progress-animation {
+        0% {
+            width: 0%;
+            background: #D88C9A;
+        }
+        
+        100% {
+            width: 100%;
+            background: #D88C9A;
+        }
+    }
+`

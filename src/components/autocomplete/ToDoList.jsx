@@ -2,7 +2,18 @@ import React from "react"
 import { nanoid } from "nanoid"
 import savedData from "../../datas/autocomplete/savedData"
 import addItem from "../../assets/images/autocomplete/add-item.svg"
-import { AddItemIcon, AllProgressBarsContainer, CheckBoxLabel, CheckMark, NewItemLabel, ProgressBarContainer, ProgressBarContent, ToDoListContainer, ToDoListItemContainer, ToDoListItemText } from "../../styles/autocomplete/autocomplete.css"
+import { AddItemIcon,
+			AllProgressBarsContainer,
+			CheckBoxLabel,
+			CheckMark,
+			DoItButtonContainer,
+			NewItemLabel,
+			NewItemInput,
+			ProgressBarContainer,
+			ProgressBarContent,
+			ToDoListContainer,
+			ToDoListItemContainer,
+			ToDoListItemText } from "../../styles/autocomplete/autocomplete.css"
 
 export default function ToDoList() {
 	const [listData, setListData] = React.useState(savedData)
@@ -23,7 +34,7 @@ export default function ToDoList() {
 		setNewItemInput(event.target.value)
 	}
     
-    const div = document.querySelector(".to-do-list-container")
+    const div = document.querySelector("#list-container")
 
 	React.useEffect(() => {
 		if (div) {
@@ -114,14 +125,14 @@ export default function ToDoList() {
 
 	return (
 		<div>
-			<ToDoListContainer>
+			<ToDoListContainer id="list-container">
 				{currentList}
 				<NewItemLabel>
 					<AddItemIcon
 						src={addItem}
 						className={`${inputInFocus && "faded"}`}
 					/>
-					<newItemInput
+					<NewItemInput
 						type="text"
 						onKeyDown={handleEnter}
 						onChange={handleNewItemInputChange}
@@ -130,9 +141,9 @@ export default function ToDoList() {
 					/>
 				</NewItemLabel>
 			</ToDoListContainer>
-			<div className="do-it-button-container">
+			<DoItButtonContainer>
 				<button onClick={autoComplete}>AutoComplete</button>
-			</div>
+			</DoItButtonContainer>
 		</div>
 	)
 }

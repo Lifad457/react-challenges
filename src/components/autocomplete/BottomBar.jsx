@@ -5,19 +5,20 @@ import addImage from '../../assets/images/autocomplete/add-image.svg';
 import more from '../../assets/images/autocomplete/more.svg';
 import undo from '../../assets/images/autocomplete/undo.svg';
 import redo from '../../assets/images/autocomplete/redo.svg';
+import { BottomBarContainer, Icon } from '../../styles/autocomplete/autocomplete.css';
 
 export default function BottomBar() {
     return (
-        <footer className="bottom-bar-container">
-            <img className="icon" src={reminder}/>
-            <img className="icon" src={addCollaborator}/>
-            <img className="icon" src={palette}/>
-            <img className="icon" src={addImage}/>
-            <img className="icon" src={more}/>
+        <BottomBarContainer>
+            <Icon src={reminder}/>
+            <Icon src={addCollaborator}/>
+            <Icon src={palette}/>
+            <Icon src={addImage}/>
+            <Icon src={more}/>
             <div>
-                <img className="icon" src={undo}/>
-                <img className="icon" src={redo}/>
+                <Icon src={undo}/>
+                <Icon src={redo}/>
             </div>
-        </footer>
+        </BottomBarContainer>
     )
 }
