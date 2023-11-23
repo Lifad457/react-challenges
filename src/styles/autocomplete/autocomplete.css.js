@@ -101,13 +101,11 @@ export const NewItemInput = styled.input`
 `
 export const AddItemIcon = styled.img`
 	height: 25px;
+    opacity: ${(props) => props.faded ? '0.2' : '1'};
 
     &:hover {
         cursor: pointer;
         filter: invert(69%) sepia(20%) saturate(755%) hue-rotate(300deg) brightness(88%) contrast(92%);
-    }
-    .faded {
-        opacity: 0.2;
     }
 `
 export const CheckBoxLabel = styled.label`
@@ -124,6 +122,10 @@ export const CheckBoxLabel = styled.label`
         cursor: pointer;
         height: 0;
         width: 0;
+    }
+
+    .crossed-out {
+        text-decoration: line-through;
     }
 `
 export const CheckMark = styled.span`
@@ -162,10 +164,6 @@ export const CheckMark = styled.span`
 `
 export const ToDoListItemText = styled.p`
     margin-left: 25px;
-
-    .crossed-out {
-        text-decoration: line-through;
-    }
 `
 export const AllProgressBarsContainer = styled.div`
     width: 50%;
