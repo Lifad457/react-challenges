@@ -10,6 +10,7 @@ import OriginalCalculator from './pages/OriginalCalculator.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import FireStarter from './pages/FireStarter.jsx'
 import AutoComplete from './pages/AutoComplete.jsx'
+import BithDayCard from './pages/BirthDayCard.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='dashboard' element={<Dashboard />} />
     <Route path='fire-starter' element={<FireStarter />} />
     <Route path='autocomplete' element={<AutoComplete />} />
+    <Route path='bd-card' element={<BithDayCard />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>

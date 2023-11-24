@@ -22,6 +22,7 @@ function Index() {
                 <Link to='dashboard'>Save the Dashboard</Link>
                 <Link to='fire-starter'>Fire Starter</Link>
                 <Link to='autocomplete'>Auto Complete</Link>
+                <Link to='bd-card'>Birth Day Card</Link>
               </Links>
           </Container>
     </>
