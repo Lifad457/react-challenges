@@ -23,6 +23,7 @@ function Index() {
                 <Link to='fire-starter'>Fire Starter</Link>
                 <Link to='autocomplete'>Auto Complete</Link>
                 <Link to='bd-card'>Birth Day Card</Link>
+                <Link to='photo-editor'>Photo Editor</Link>
               </Links>
           </Container>
     </>
