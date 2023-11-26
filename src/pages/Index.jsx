@@ -24,6 +24,7 @@ function Index() {
                 <Link to='autocomplete'>Auto Complete</Link>
                 <Link to='bd-card'>Birth Day Card</Link>
                 <Link to='photo-editor'>Photo Editor</Link>
+                <Link to='finger-strength'>Finger Strength Test</Link>
               </Links>
           </Container>
     </>

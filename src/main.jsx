@@ -12,6 +12,7 @@ import FireStarter from './pages/FireStarter.jsx'
 import AutoComplete from './pages/AutoComplete.jsx'
 import BithDayCard from './pages/BirthDayCard.jsx'
 import PhotoEditor from './pages/PhotoEditor.jsx'
+import FingerStrengthTest from './pages/FingerStrengthTest.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='autocomplete' element={<AutoComplete />} />
     <Route path='bd-card' element={<BithDayCard />} />
     <Route path='photo-editor' element={<PhotoEditor />} />
+    <Route path='finger-strength' element={<FingerStrengthTest />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>
