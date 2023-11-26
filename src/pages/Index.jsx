@@ -25,6 +25,7 @@ function Index() {
                 <Link to='bd-card'>Birth Day Card</Link>
                 <Link to='photo-editor'>Photo Editor</Link>
                 <Link to='finger-strength'>Finger Strength Test</Link>
+                <Link to='sonnet-central'>Sonnet Central</Link>
               </Links>
           </Container>
     </>
