@@ -14,6 +14,7 @@ import BithDayCard from './pages/BirthDayCard.jsx'
 import PhotoEditor from './pages/PhotoEditor.jsx'
 import FingerStrengthTest from './pages/FingerStrengthTest.jsx'
 import SonnetCentral from './pages/SonnetCentral.jsx'
+import VirtualReality from './pages/VirtualReality.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='photo-editor' element={<PhotoEditor />} />
     <Route path='finger-strength' element={<FingerStrengthTest />} />
     <Route path='sonnet-central' element={<SonnetCentral />} />
+    <Route path='virtual-reality' element={<VirtualReality />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>

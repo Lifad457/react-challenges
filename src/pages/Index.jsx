@@ -26,6 +26,7 @@ function Index() {
                 <Link to='photo-editor'>Photo Editor</Link>
                 <Link to='finger-strength'>Finger Strength Test</Link>
                 <Link to='sonnet-central'>Sonnet Central</Link>
+                <Link to='virtual-reality'>Virtual Reality Site</Link>
               </Links>
           </Container>
     </>

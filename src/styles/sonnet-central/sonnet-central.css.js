@@ -103,7 +103,7 @@ export const SearchContainer = styled.div`
     }
 
     button:hover {
-        opacity: .8
+        opacity: .8;
     }
 
     button:active {
