@@ -27,6 +27,7 @@ function Index() {
                 <Link to='finger-strength'>Finger Strength Test</Link>
                 <Link to='sonnet-central'>Sonnet Central</Link>
                 <Link to='virtual-reality'>Virtual Reality Site</Link>
+                <Link to='sketch-o-matic'>Sketch-O-Matic</Link>
               </Links>
           </Container>
     </>
