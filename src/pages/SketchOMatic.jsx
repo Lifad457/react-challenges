@@ -48,18 +48,26 @@ export default function SketchOMatic() {
         }
     }, [resetRequested])
     
+    function handleMouseEnter(event) {
+        if (!mouseDown) return
+        setPixels(prevPixels => prevPixels.map(pixel => {
+            return pixel.id === event.target.id ? {id: pixel.id, filled: wantsToDraw} : pixel
+        }))
+    }
+
 	const pixelElements = pixels.map((pixel) => (
 		<div
 			key={pixel.id}
             id={pixel.id}
 			className={`pixel ${pixel.filled ? "filled" : "empty"}`}
+            onMouseEnter={handleMouseEnter}
 		></div>
 	))
 
     return (
         <>
             <GlobalStyle />
-            <Wrapper>
+            <Wrapper onMouseDown={() => setMouseDown(true)} onMouseUp={() => setMouseDown(false)}>
                 <Container className={`${resetRequested && "shake-horizontal"}`}>
                     <h1>Sketch-o-Matic</h1>
                     <Canvas
