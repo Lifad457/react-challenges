@@ -6,7 +6,7 @@ import GlobalStyle from "../styles/sketch-o-matic/global.css"
 export default function SketchOMatic() {
  
 	const INITIAL_STATE = new Array(3600)
-        .fill("").map(item => ( 
+        .fill("").map(() => ( 
             { id: nanoid(), filled: false }
         ))
 

@@ -16,6 +16,7 @@ import FingerStrengthTest from './pages/FingerStrengthTest.jsx'
 import SonnetCentral from './pages/SonnetCentral.jsx'
 import VirtualReality from './pages/VirtualReality.jsx'
 import SketchOMatic from './pages/SketchOMatic.jsx'
+import Pookemon from './pages/Pookemon.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='sonnet-central' element={<SonnetCentral />} />
     <Route path='virtual-reality' element={<VirtualReality />} />
     <Route path='sketch-o-matic' element={<SketchOMatic />} />
+    <Route path='pookemon' element={<Pookemon />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>

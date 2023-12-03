@@ -6,7 +6,6 @@ export const Container = styled.div`
     color: skyblue;
     padding: 2rem;
     text-align: center;
-    height: 100vh;
 `
 export const Images = styled.img`
     height: 6em;
