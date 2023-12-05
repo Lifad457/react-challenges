@@ -17,6 +17,7 @@ import SonnetCentral from './pages/SonnetCentral.jsx'
 import VirtualReality from './pages/VirtualReality.jsx'
 import SketchOMatic from './pages/SketchOMatic.jsx'
 import Pookemon from './pages/Pookemon.jsx'
+import SpaceWarrior from './pages/SpaceWarrior.jsx'
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -36,6 +37,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='virtual-reality' element={<VirtualReality />} />
     <Route path='sketch-o-matic' element={<SketchOMatic />} />
     <Route path='pookemon' element={<Pookemon />} />
+    <Route path='space-warrior' element={<SpaceWarrior />} />
 
     <Route path='*' element={<h2>Not found !</h2>} />
   </Route>

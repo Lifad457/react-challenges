@@ -29,6 +29,7 @@ function Index() {
                 <Link to='virtual-reality'>Virtual Reality Site</Link>
                 <Link to='sketch-o-matic'>Sketch-O-Matic</Link>
                 <Link to='pookemon'>Pookemon</Link>
+                <Link to='space-warrior'>Space Warrior</Link>
               </Links>
           </Container>
     </>
